@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import {Board} from 'react-scrabble'
+import Loader from './Loader'
+
 class Grid extends Component {
 
   state = {data: []}
@@ -17,7 +19,7 @@ class Grid extends Component {
       return <Board data={data}/>
     }
     else {
-      return <div>Loading</div>
+      return <Loader/>
     }
   }
 

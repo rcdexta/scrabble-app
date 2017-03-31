@@ -7,7 +7,11 @@ const uuidV4 = require('uuid/v4');
 
 export default class Form extends Component {
 
-  state = {data: [], loading: false}
+  state = {data: [], loading: false, popup: false, key: undefined}
+
+  closePopup = () => {
+    this.setState({popup: false})
+  }
 
   updateWord = (idx, evt) => {
     const {data} = this.state
@@ -38,13 +42,14 @@ export default class Form extends Component {
     const dataToBeSaved = this.state.data.filter((item) => item.word !== '')
     const token = uuidV4().split('-')[0].toUpperCase()
     axios.post(`https://85phjmgac9.execute-api.us-west-2.amazonaws.com/prod/react-scrabble/${token}`, dataToBeSaved).then((res) => {
-      this.setState({loading: false})
-      console.log(res.data)
+      const key = res.data.key.split(".")[0]
+      this.setState({loading: false, popup: true, key: key})
+
     })
   }
 
   render() {
-    const {data, loading} = this.state
+    const {data, loading, popup} = this.state
     if (loading) {
       return <Loader/>
     }
@@ -68,8 +73,17 @@ export default class Form extends Component {
             </div>
           })
         }
-        <button onClick={this.persist}>Generate</button>
+        <button className='generateButton' onClick={this.persist}>Generate</button>
       </div>
+      {popup && <div className="overlay">
+        <div className="popup">
+          <button className="closeButton" onClick={this.closePopup}>&times;</button>
+          <div className="content">
+            <p>Please share the following link to access the scrabble board</p>
+            <p>https://scrabbleboard//{this.state.key}</p>
+          </div>
+        </div>
+      </div>}
     </div>
   }
 }
