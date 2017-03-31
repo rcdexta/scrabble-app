@@ -1,0 +1,65 @@
+body {
+    background-color: #e6c998;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: radial-gradient(center, #7c6f59, transparent);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+p, input {
+    font-family: Oswald, sans-serif;
+    font-size: 14px;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+p {
+    color: black;
+    font-size: 18px;
+    margin: 20px 0px;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.row input {
+     margin: 10px 40px;
+     border: 2px solid #ADCCCC;
+     height: 31px;
+     width: 223px;
+     box-shadow: 0px 0px 27px #CCC inset;
+     transition: 500ms all ease;
+     padding: 3px 3px 3px 3px;
+ }
+
+button {
+    margin: 20px;
+    background: #f5cf90 url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/49914/veneer-birch-texture-fs8.png');
+    position: relative;
+    width: 19mm;
+    height: 8mm;
+    box-sizing: border-box;
+    box-shadow: 0 1.125mm 0.75mm -0.5mm rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-top-width: 0.75mm;
+    border-right-color: rgba(0, 0, 0, 0.15);
+    border-bottom: 1.125mm rgba(0, 0, 0, 0.3);
+    border-left-color: rgba(255, 255, 255, 0.25);
+    border-radius: 0.75mm;
+    cursor: pointer;
+    text-transform: uppercase;
+}
