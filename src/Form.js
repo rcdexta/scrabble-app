@@ -79,8 +79,10 @@ export default class Form extends Component {
         <div className="popup">
           <button className="closeButton" onClick={this.closePopup}>&times;</button>
           <div className="content">
-            <p>Please share the following link to access the scrabble board</p>
-            <p>https://scrabbleboard//{this.state.key}</p>
+            <p>Use the following link to play/share the scrabble game that you created</p>
+            <a href={`http://app.scrabbler.click/${this.state.key}`} className="link">
+              http://app.scrabbler.click/{this.state.key}
+              </a>
           </div>
         </div>
       </div>}

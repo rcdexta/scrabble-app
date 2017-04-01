@@ -86,7 +86,13 @@ p {
 
 .popup .content {
     max-height: 30%;
+    text-align: center;
     overflow: auto;
+}
+
+.popup .content .link {
+    color: green;
+    text-decoration: underline;
 }
 
 .closeButton {
