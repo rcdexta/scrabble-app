@@ -4445,9 +4445,9 @@ react-router@^3.0.2:
     loose-envify "^1.2.0"
     warning "^3.0.0"
 
-react-scrabble@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/react-scrabble/-/react-scrabble-1.1.0.tgz#3e57db2ee60d348fc2a4228cdf5af2a5ea1bd059"
+react-scrabble@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/react-scrabble/-/react-scrabble-1.1.1.tgz#8178f0045e38e0973cee8c6f22a05f602ac6c052"
   dependencies:
     "@kadira/storybook-deployer" "^1.0.0"
     babel-preset-stage-0 "^6.22.0"
