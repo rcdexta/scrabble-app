@@ -4412,6 +4412,10 @@ rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+react-countdown-clock@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/react-countdown-clock/-/react-countdown-clock-1.1.0.tgz#a2ff686cab1ceb36fd5291136726bdc6f4c69043"
+
 react-dev-utils@^0.5.2:
   version "0.5.2"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-0.5.2.tgz#50d0b962d3a94b6c2e8f2011ed6468e4124bc410"
@@ -4445,9 +4449,9 @@ react-router@^3.0.2:
     loose-envify "^1.2.0"
     warning "^3.0.0"
 
-react-scrabble@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/react-scrabble/-/react-scrabble-1.1.1.tgz#8178f0045e38e0973cee8c6f22a05f602ac6c052"
+react-scrabble@=1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/react-scrabble/-/react-scrabble-1.2.0.tgz#dee5b5287319fe64ec2bbfd1ec19590c6366a845"
   dependencies:
     "@kadira/storybook-deployer" "^1.0.0"
     babel-preset-stage-0 "^6.22.0"
@@ -4455,6 +4459,7 @@ react-scrabble@^1.1.1:
     immutability-helper "^2.1.2"
     invariant "^2.2.2"
     react "^15.4.2"
+    react-countdown-clock "^1.1.0"
     react-dom "^15.4.2"
     styled-components "^1.4.4"
 
